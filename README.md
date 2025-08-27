@@ -3,25 +3,51 @@
 A Python project demonstrating Data Structures and Algorithms concepts through a simple inventory management system.
 
 ## Project Structure
-inventory_management_system/
-├── main.py # Entry point
-├── requirements.txt # Dependencies
-├── README.md # Documentation
-│
-├── src/ # Source code
-│ ├── inventory_manager.py # Week 1: Lists & Matrices
-│ ├── composite_product.py # Week 2: Recursion
-│ ├── user_interface.py # Week 3: Functions & Loops
-│ ├── transaction_ledger.py # Week 4: Linked Lists
-│ ├── order_management.py # Week 5: Stacks & Queues
-│ └── api.py # API for React frontend
-│
-├── data/ # Runtime data
-│ └── sample_data.py # Sample data
-│
-└── tests/ # Test files (to be implemented)
-
-
+```
+inventory-management-system/
+├── backend/
+│   ├── main.py
+│   ├── requirements.txt
+│   ├── data/
+│   │   ├── __init__.py
+│   │   └── sample_data.py
+│   ├── src/
+│   │   ├── __init__.py
+│   │   ├── api.py
+│   │   ├── composite_product.py
+│   │   ├── inventory_manager.py
+│   │   ├── order_management.py
+│   │   ├── transaction_ledger.py
+│   │   └── user_interface.py
+│   └── tests/
+│       ├── __init__.py
+│       ├── test_api.py
+│       ├── test_composite.py
+│       ├── test_inventory.py
+│       ├── test_orders.py
+│       └── test_transactions.py
+├── frontend/
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── public/
+│   │   ├── favicon.ico
+│   │   └── index.html
+│   └── src/
+│       ├── App.css
+│       ├── App.js
+│       ├── index.js
+│       ├── components/
+│       │   ├── AddProduct.js
+│       │   ├── Footer.js
+│       │   ├── Header.js
+│       │   ├── InventoryList.js
+│       │   ├── OrderForm.js
+│       │   └── TransactionHistory.js
+│       └── services/
+│           └── api.js
+├── README.md
+└── .gitignore
+```
 
 ## How to Run
 
