@@ -1,13 +1,9 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5000/api';
-
-// Create axios instance
+// Create axios instance with simple configuration
 const api = axios.create({
-  baseURL: API_BASE_URL,
-  headers: {
-    'Content-Type': 'application/json',
-  },
+  baseURL: 'http://localhost:5001/api',
+  timeout: 10000,
 });
 
 // Inventory API

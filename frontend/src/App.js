@@ -13,6 +13,7 @@ function App() {
   const [status, setStatus] = useState({});
   const [transactions, setTransactions] = useState([]);
   const [activeTab, setActiveTab] = useState('inventory');
+  
 
   useEffect(() => {
     fetchData();
