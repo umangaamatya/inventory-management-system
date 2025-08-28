@@ -47,9 +47,9 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
         "w-64"
       )}>
         {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b border-border">
+        <div className="flex items-center justify-between px-4 py-5 lg:px-6 border-b border-border">
           <h1 className="text-xl font-bold text-primary">
-            Inventory Pro
+            StockSync
           </h1>
           <Button
             variant="ghost"
