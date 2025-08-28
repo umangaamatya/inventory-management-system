@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Product, Order, Transaction, SystemStatus, NewProduct, StockUpdate } from '@/types';
 
-const API_BASE_URL = 'http://localhost:5001/api';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api';
 
 // Create axios instance with default config
 const api = axios.create({
@@ -31,7 +31,7 @@ api.interceptors.response.use(
     console.error('API Response Error:', error);
     
     if (error.code === 'ECONNREFUSED') {
-      throw new Error('Unable to connect to the server. Please ensure the backend is running on port 5001.');
+      throw new Error('Unable to connect to the server. Please ensure the backend is reachable at the configured API base URL.');
     }
     
     if (error.response?.status === 404) {
